@@ -1,0 +1,25 @@
+{
+  "name": "randgenmatrix",
+  "version": "1.0.0",
+  "description": "Generate random numbers with specifications",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGZhouYC/RandGen.git"
+  },
+  "keywords": [
+    "Random"
+  ],
+  "author": "rmfgzhou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGZhouYC/RandGen/issues"
+  },
+  "homepage": "https://github.com/RGZhouYC/RandGen#readme"
+}
