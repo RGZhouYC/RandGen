@@ -1,7 +1,11 @@
 # randgenMatrix-npm-pakcage
 
 ## randgenMatrix
-    Generate array or matrix of random number with specified range, size, decimal, and export to txt or csv file. 
+Generate array or matrix of random number with specified range, size, decimal, and export to txt or csv file. 
 
 ## Installation
-    > npm install randgenMatrix
+> npm install randgenMatrix
+
+## Usage
+Generate an array of random number. min and max specifies the range, length specifies the number of elements in the array, decimal specifies how many digits after decimal point. 
+> GenerateRandomArray(length, min, max, decimal)
