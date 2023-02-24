@@ -13,5 +13,6 @@ Generate an array of random number. min and max specifies the range, length spec
     > GenerateRandomArray(length, min, max, decimal)
 Example: 
 > GenerateRandomCol(7, 56, 80, 2)
+
 Returns: 
 > ['79.11', '67.02', '65.51', '70.45', '75.17', '76.71', '62.92']
