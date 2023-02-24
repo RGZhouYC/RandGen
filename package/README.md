@@ -10,7 +10,8 @@ Generate array or matrix of random number with specified range, size, decimal, a
 ### GenerateRandomArray
 Generate an array of random number. min and max specifies the range, length specifies the number of elements, decimal specifies the number of digits to be saved after decimal point.
     
-    > GenerateRandomArray(length, min, max, decimal)
+> GenerateRandomArray(length, min, max, decimal)
+
 Example: 
 > GenerateRandomCol(7, 56, 80, 2)
 
