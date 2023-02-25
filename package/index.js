@@ -48,7 +48,7 @@ function exportData(source, exportType, exportPath) {
     }
 }
 
-function GenerateRandomRow(length, min, max, decimal, exportType, exportPath){
+function ExportRandomRow(length, min, max, decimal, exportType, exportPath){
     var output = GenerateRandomArray(length, min, max, decimal)
     var outputstring = ''
     var des = '' // final export destination 
@@ -60,7 +60,7 @@ function GenerateRandomRow(length, min, max, decimal, exportType, exportPath){
     return output
 }
 
-function GenerateRandomCol(length, min, max, decimal, exportType, exportPath){
+function ExportRandomCol(length, min, max, decimal, exportType, exportPath){
     var output = GenerateRandomArray(length, min, max, decimal)
     var outputstring = ''
     var des = '' // final export destination 
@@ -88,14 +88,39 @@ function ExportRandomMatrix(rows, cols, min, max, decimal, exportType, exportPat
     return output
 }
 
-function GenerateByPattern(){
-
+function GenerateArrayByPattern(length, offset, decimal, pattern, exportType, exportPath){
+    var output = []
+    var order = pattern[0]
+    var coef = []
+    for (let l = 0; l < order; l++) {
+        if (pattern[l+1]) {
+            coef.push(pattern[l+1])
+        }
+        else {
+            coef.push(0)
+        }
+    }
+    let Num = 1
+    for (let i = 0; i < length; i++) {
+        var result = 0
+        var o = order
+        for (let j = 0; j < coef.length; j++) {
+            result = result + coef[j] * Math.pow(Num, o)
+            o = o - 1
+        }
+        var randNum = Math.random() * ((result+offset) - (result-offset)) + (result-offset)
+        randNum = randNum.toFixed(decimal)
+        output.push(randNum)
+        Num++
+    }
+    return output
 }
 
-module.exports = GenerateRandomArray, GenerateRandomRow, GenerateRandomCol, GenerateRandomMatrix, GenerateByPattern,
+module.exports = GenerateRandomArray, ExportRandomRow, ExportRandomCol, GenerateRandomMatrix, GenerateArrayByPattern,
 ExportRandomMatrix
 
 //testing commands
 //GenerateRandomCol(7, 56, 80, 2, 'console', '.')
 //console.log(GenerateRandomArray(7, 56, 80, 2));
 //ExportRandomMatrix(7, 3, 56, 80, 2, 'txt', '.')
+console.log(GenerateArrayByPattern(30, 0.01, 3, [2,4,0,5,5], 3, 5));

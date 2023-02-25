@@ -17,3 +17,14 @@ Example:
 
 Returns: 
 > ['79.11', '67.02', '65.51', '70.45', '75.17', '76.71', '62.92']
+
+### GenerateRandomMatrix
+Generate an array of random number. `min` and `max` specifies the range, `rows` specifies the number of elements in a row, `cols` specifies the number of elements in a cols, `decimal` specifies the number of digits to be saved after decimal point.
+
+> GenerateRandomMatrix(rows, cols, min, max, decimal)
+
+Example: 
+> GenerateRandomMatrix(7, 3, 56, 80, 2)
+
+Returns: 
+> 
