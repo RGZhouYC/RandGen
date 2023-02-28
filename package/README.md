@@ -28,10 +28,40 @@ Example:
 
 Returns: 
 > [Array(3), Array(3), Array(3), Array(3), Array(3), Array(3), Array(3)]
+
 Each array is a row. 
 
 > console.log(GenerateRandomMatrix(7, 3, 56, 80, 2)[0])
+
 Access the first row. 
 
 Returns: 
 > (3) ['64.75', '64.67', '64.01']
+
+### GenerateArrayByPattern
+Example: 
+
+Returns: 
+
+### ExportRandomRow
+
+> ExportRandomRow(length, min, max, decimal, exportType, exportPath)
+
+Example: 
+
+Returns: 
+
+### ExportRandomCol
+Example: 
+
+Returns: 
+
+### ExportRandomMatrix
+Example: 
+
+Returns: 
+
+### ExportArrayByPattern
+Example: 
+
+Returns: 

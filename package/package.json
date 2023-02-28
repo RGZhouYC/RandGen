@@ -1,6 +1,6 @@
 {
   "name": "randgenmatrix",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Generate random numbers with specifications",
   "main": "index.js",
   "directories": {
