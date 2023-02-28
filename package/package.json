@@ -1,6 +1,6 @@
 {
   "name": "randgenmatrix",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Generate random numbers with specifications",
   "main": "index.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RGZhouYC/RandGen.git"
+    "url": "git+https://github.com/RGZhouYC/randgenMatrix.git"
   },
   "keywords": [
     "Random"
@@ -19,7 +19,7 @@
   "author": "rmfgzhou",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RGZhouYC/RandGen/issues"
+    "url": "https://github.com/RGZhouYC/randgenMatrix/issues"
   },
-  "homepage": "https://github.com/RGZhouYC/RandGen#readme"
+  "homepage": "https://github.com/RGZhouYC/randgenMatrix#readme"
 }
